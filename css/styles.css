@@ -1,3 +1,19 @@
 body {
-    background: pink;
+    background: #8ECAE6;
+}
+#my_name {
+    color:#023047;
+    background:#FFB703;
+}
+.large-text{
+    font-size: 26px;
+}
+.button {
+    background: #FFB703;
+    color: #023047;
+    border-radius: 10px;
+}
+
+.button.large-text{
+    font-weight: bold;
 }
