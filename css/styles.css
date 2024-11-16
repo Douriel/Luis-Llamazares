@@ -13,9 +13,37 @@ Colors:
 body {
     background: #8ECAE6;
 }
-
+/* link styles */
+a {
+    color: #FFB703;
+}
+a:hover {
+    color: #FB8500;
+    text-decoration: none;
+}
+.btn {
+    background: #FFB703;
+    color: #023047;
+    border-radius: 7px;
+    text-decoration-line: none;
+    padding-left: 2px;
+    padding-right: 4px;
+}
 /* HOME
 ------------------*/
+.home {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: #219dbcc2;
+    padding: 25px;
+}
+
+.home h1::first-letter{
+    color: #219EBC;
+    padding-left: 1%
+}
 
 
 /* RESUME
@@ -28,11 +56,27 @@ body {
 /* Work exp
 ------------------*/
 
+/* Education
+------------------*/
+
+/* FOOTER
+------------------*/
+footer {
+    background: #222222;
+    color: #8ECAE6;
+}
+
+
+
+/* IDs
+------------------*/
 
 #my_name {
     color:#023047;
     background:#FFB703;
 }
+
+
 .large-text{
     font-size: 26px;
 }
