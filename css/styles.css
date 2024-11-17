@@ -10,8 +10,22 @@ Colors:
 /* GLOBAL STYLES
 ------------------*/
 
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
 body {
     background: #8ECAE6;
+    margin: 0px;
 }
 /* link styles */
 a {
@@ -29,6 +43,13 @@ a:hover {
     padding-left: 2px;
     padding-right: 4px;
 }
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px;
+}
+
 /* HOME
 ------------------*/
 .home {
@@ -48,7 +69,9 @@ a:hover {
 
 /* RESUME
 ------------------*/
-
+.resume header {
+    background: url(../images/bg-home-office-studio.jpg);
+}
 
 /* Projects
 ------------------*/
@@ -65,7 +88,17 @@ footer {
     background: #222222;
     color: #8ECAE6;
 }
-
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 32px;
+    height: 32px;
+}
 
 
 /* IDs
