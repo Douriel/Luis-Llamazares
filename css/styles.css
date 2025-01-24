@@ -26,6 +26,10 @@ html, body {
 body {
     background: #8ECAE6;
     margin: 0px;
+    font-family: "Montserrat", serif;
+}
+h1, h2, h3{
+    /* font-family: "Abril Fatface", serif; */
 }
 /* link styles */
 a {
