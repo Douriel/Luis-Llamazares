@@ -1,0 +1,9 @@
+Poner un carrusel de fotos de proyectos en lugar de la actual seccion.
+
+cada Proyecto poner un tipo de letra distinto. (ejemplo, para el chip 8 Podemos poner letra tipo pixel que se mueva).
+
+Cabeza flotante mia como dijo Pach.
+
+Añadir sección de hobbies.
+
+arreglar el boton de descargar curriculum, no deja ver la social media

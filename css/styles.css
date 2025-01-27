@@ -15,6 +15,7 @@ Colors:
 */
 html {
     box-sizing: border-box;
+    font-size: 62.5%; // Setting the default to 10px.
   }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -27,9 +28,22 @@ body {
     background: #8ECAE6;
     margin: 0px;
     font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
 }
 h1, h2, h3{
     /* font-family: "Abril Fatface", serif; */
+    font-weight: 700;
+}
+h1{
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.4rem;
 }
 /* link styles */
 a {
@@ -42,10 +56,14 @@ a:hover {
 .btn {
     background: #FFB703;
     color: #023047;
-    border-radius: 7px;
+    border-radius: 4px;
     text-decoration-line: none;
-    padding-left: 2px;
-    padding-right: 4px;
+    padding: 7px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    display: inline-block;
 }
 .download-link {
     position: fixed;
