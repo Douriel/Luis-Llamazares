@@ -69,7 +69,14 @@ a:hover {
     position: fixed;
     bottom: 20px;
     right: 15px;
-
+    font-size: 1.5rem;
+}
+@media screen and (max-width:1200px){
+    .download-link {
+        /* No funciona, quiero que si es menor de 1200px el boton se quede fijo. */
+        
+        position: absolute;
+    }
 }
 
 .content-wrapper {
@@ -126,7 +133,6 @@ a:hover {
 /* Projects
 ------------------*/
 .project-container {
-    display: flex;
     padding: 20px;
 }
 .project-item {
@@ -135,11 +141,33 @@ a:hover {
 .project-item h3 {
     margin-top: 0%;
 }
-.project-container img {
-   width: 300px;
-   margin-right: 20px;
+.project-item img {
+    /* max-width: 100%; */
+   /* width: 300px;
+   margin-right: 20px; */
 }
 
+@media screen and (min-width:860px) {
+    .project-container {
+        display: flex;
+    }
+    .project-item img {
+        width: 300px;
+        margin-right: 20px;
+     }
+}
+
+@media screen and (max-width:859px) {
+    /* .project-container {
+        display: block;
+    } */
+    .project-item img {
+        max-width: 100%;
+        margin:auto;
+        display: block;
+        
+     }
+}
 
 /* Work exp
 ------------------*/
