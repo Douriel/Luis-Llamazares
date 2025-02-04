@@ -15,7 +15,8 @@ Colors:
 */
 html {
     box-sizing: border-box;
-    font-size: 62.5%; // Setting the default to 10px.
+    font-size: 62.5%; 
+    /* // Setting the default to 10px. */
   }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -79,6 +80,7 @@ a:hover {
     }
 }
 
+
 .content-wrapper {
     margin: 0 auto;
     max-width: 900px;
@@ -123,6 +125,18 @@ a:hover {
 }
 .resume-section h2 {
     border-bottom: 2px dashed #FFB703;
+}
+
+@media screen and (max-width:700px) {
+    .resume header::before{
+        height: 200px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
 }
 
 
@@ -172,17 +186,22 @@ a:hover {
 /* Work exp
 ------------------*/
 .work-item {
-     display: grid;
-     grid-template-columns: 300px 1fr;
-     column-gap: 20px;
      margin: 30px 0;
 }
 
 .work-details p {
     margin: 0;
 }
-.work-summary p:first-child { 
-    margin: 0;
+
+@media screen and (min-width:860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+   }
+   .work-summary p:first-child { 
+        margin: 0;
+    }
 }
 
 /* Education
