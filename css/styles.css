@@ -110,6 +110,15 @@ a:hover {
     padding-left: 1%
 }
 
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
 
 /* RESUME
 ------------------*/
@@ -218,9 +227,6 @@ a:hover {
 footer {
     background: #222222;
     color: #8ECAE6;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
 }
 .socials {
     list-style-type: none;
@@ -236,6 +242,20 @@ footer {
 }
 .socials img:hover{
     opacity: 0.6;
+}
+
+@media screen and (min-width:860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
 
 
