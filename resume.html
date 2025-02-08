@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="javaScript/button_script.js"></script>
   </head>
   <body class="resume">
-    <a class="btn download-link" href="files/Luis Llamazares Resume.pdf">Download CV as PDF</a>
+    <a id="cv_button" class="btn download-link" href="files/Luis Llamazares Resume.pdf">Download CV as PDF</a>
     <!-- //  INTRO  // -->
+
     <header>
       <!-- Start content edits below this line. -->
       <div class="content-wrapper">
@@ -168,10 +170,30 @@
 
         <!-- End content edits here. -->
       </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const element_button = document.getElementById("cv_button");
+            const element_footer = document.getElementById("my_footer");
+      
+            if (!element_button || !element_footer) {
+                console.error("Element not found!");
+                return; // Prevents further errors
+            }
+      
+            const elemRect_button = element_button.getBoundingClientRect();
+            const elemRect_footer = element_footer.getBoundingClientRect();
+      
+            console.log("Button bottom=" + elemRect_button.bottom);
+            console.log("Footer Top=" + elemRect_footer.top);
+            
+            // Now I have to compare both results and make the changes when scroll
+        });
+      </script>
     </main>
 
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
+    <footer id="my_footer">
       <!-- Start content edits below this line. -->
       <p>© 2024 by Luis Llamazares | <a href="mailto:lugonllamazares@gmail.com">lugonllamazares@gmail.com</a></p>
 
