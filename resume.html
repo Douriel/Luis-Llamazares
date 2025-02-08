@@ -172,23 +172,43 @@
       </section>
 
       <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const element_button = document.getElementById("cv_button");
-            const element_footer = document.getElementById("my_footer");
-      
-            if (!element_button || !element_footer) {
-                console.error("Element not found!");
-                return; // Prevents further errors
-            }
-      
-            const elemRect_button = element_button.getBoundingClientRect();
-            const elemRect_footer = element_footer.getBoundingClientRect();
-      
-            console.log("Button bottom=" + elemRect_button.bottom);
-            console.log("Footer Top=" + elemRect_footer.top);
-            
-            // Now I have to compare both results and make the changes when scroll
-        });
+        document.addEventListener("DOMContentLoaded", function() {
+          const cvButton = document.getElementById('cv_button');
+          const footer = document.getElementById('my_footer');
+          
+          function checkOffset() {
+              if(!cvButton || !footer) return;
+              
+              // Get positions relative to document
+              const buttonRect = cvButton.getBoundingClientRect();
+              const footerRect = footer.getBoundingClientRect();
+              const scrollY = window.scrollY;
+              
+              // Calculate document-relative positions
+              const buttonBottom = scrollY + buttonRect.bottom;
+              const footerTop = scrollY + footerRect.top;
+              
+              // Check if button is 10px above footer
+              if(buttonBottom >= footerTop - 10) {
+                  cvButton.style.position = 'absolute';
+                  cvButton.style.top = `${footerTop - buttonRect.height - 10}px`;
+                  cvButton.style.right = '20px';
+                  cvButton.style.bottom = 'auto';
+              } 
+              // Check if viewport bottom is above footer
+              if(scrollY + window.innerHeight < footerTop) {
+                  cvButton.style.position = 'fixed';
+                  cvButton.style.bottom = '20px';
+                  cvButton.style.top = 'auto';
+                  cvButton.style.right = '20px';
+              }
+          }
+
+          // Initial check and event listeners
+          checkOffset();
+          window.addEventListener('scroll', checkOffset);
+          window.addEventListener('resize', checkOffset);
+      });
       </script>
     </main>
 
