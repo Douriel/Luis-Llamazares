@@ -72,19 +72,31 @@ a:hover {
     right: 15px;
     font-size: 1.5rem;
 }
-@media screen and (max-width:1200px){
-    .download-link {
-        /* No funciona, quiero que si es menor de 1200px el boton se quede fijo. */
-        
-        position: absolute;
-    }
-}
-
 
 .content-wrapper {
     margin: 0 auto;
     max-width: 900px;
     padding: 10px;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #FFB703;
+    overflow: hidden;
+    padding: 14px 16px;
+    
+}
+.nav-bar a {
+    color: #023047;
+    padding: 1.6rem 1.7rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 /* HOME
