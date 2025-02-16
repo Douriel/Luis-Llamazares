@@ -6,9 +6,12 @@ Cabeza flotante mia como dijo Pach.
 
 Añadir sección de hobbies.
 
-Navigation bar.
+
 
 Añadir profundidad a la foto del inicio.
+
+
+La nav bar no se detiene donde debe, justo encima del titulo.
 
 
 
@@ -17,6 +20,7 @@ Cosas hechas:
 - Desde 860 px de ancho la pagina se ve bien. Por lo que debemos poner un breakpoint ahi.
 -verlo desde el movil es un desastre.
 -arreglar el boton de descargar curriculum, no deja ver la social media
+-Navigation bar.
 
 
 
