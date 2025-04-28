@@ -1,12 +1,3 @@
-/*
-Colors:
-    #8ECAE6 pale blue
-    #219EBC blue
-    #023047 dark blue
-    #FFB703 yelow
-    #FB8500 orange
-*/
-
 /* GLOBAL STYLES
 ------------------*/
 
@@ -16,9 +7,8 @@ Colors:
 html {
     box-sizing: border-box;
     font-size: 62.5%; 
-    /* // Setting the default to 10px. */
     scroll-behavior: smooth;
-  }
+}
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -27,46 +17,53 @@ html, body {
     height: 100%;
 }
 body {
-    background: #8ECAE6;
+    background: #F0EBD8;
     margin: 0px;
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
-    line-height: 1.4;
+    line-height: 1.6;
+    color: #0D1321;
 }
-h1, h2, h3{
-    /* font-family: "Abril Fatface", serif; */
+h1, h2, h3 {
     font-weight: 700;
+    color: #1D2D44;
 }
-h1{
+h1 {
     font-size: 7rem;
     line-height: 0.85;
 }
-h2{
+h2 {
     font-size: 3.6rem;
 }
-h3{
+h3 {
     font-size: 2.4rem;
 }
+
 /* link styles */
 a {
-    color: #FFB703;
-}
-a:hover {
-    color: #FB8500;
+    color: #3E5C76;
     text-decoration: none;
 }
+a:hover {
+    color: #748CAB;
+    text-decoration: underline;
+}
+
 .btn {
-    background: #FFB703;
-    color: #023047;
-    border-radius: 4px;
-    text-decoration-line: none;
-    padding: 7px;
-    line-height: 1;
+    background: #3E5C76;
+    color: #F0EBD8;
+    border-radius: 6px;
+    padding: 8px 14px;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: .1em;
     display: inline-block;
+    transition: background 0.3s ease;
 }
+.btn:hover {
+    background: #1D2D44;
+}
+
 .download-link {
     position: fixed;
     bottom: 20px;
@@ -77,30 +74,27 @@ a:hover {
 .content-wrapper {
     margin: 0 auto;
     max-width: 900px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .nav-bar {
     display: flex;   
-  justify-content: flex-end; 
+    justify-content: flex-end; 
     position: fixed;
     width: 100%;
-    background-color: #FFB703;
-    overflow: hidden;
-   padding: 0px 2.4rem;
-    
+    background-color: #0D1321;
+    padding: 1rem 2rem;
+    z-index: 100;
 }
 .nav-bar a {
-    color: #023047;
+    color: #F0EBD8;
     padding: 1.6rem 1.7rem;
     font-size: 2rem;
     text-decoration: none;
-    
 }
-
 .nav-bar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #3E5C76;
+    color: #F0EBD8;
 }
 
 /* HOME
@@ -117,16 +111,17 @@ a:hover {
 }
 
 .content-bg {
-    background: #219dbcc2;
+    background: rgba(13, 19, 33, 0.7); /* darker transparent background */
     padding: 30px;
+    border-radius: 10px;
 }
 
-.home h1::first-letter{
-    color: #219EBC;
-    padding-left: 1%
+.home h1::first-letter {
+    color: #748CAB;
+    padding-left: 1%;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width: 650px) {
     .home .content-wrapper {
         padding: 10px;
     }
@@ -134,7 +129,6 @@ a:hover {
         padding: 20px;
     }
 }
-
 
 /* RESUME
 ------------------*/
@@ -149,27 +143,23 @@ a:hover {
     margin-bottom: 50px;
 }
 .resume-section h2 {
-    border-bottom: 2px dashed #FFB703;
+    border-bottom: 2px dashed #3E5C76;
+    padding-bottom: 5px;
 }
 
-@media screen and (max-width:700px) {
-    .resume header::before{
+@media screen and (max-width: 700px) {
+    .resume header::before {
         height: 200px;
     }
-    h1{
+    h1 {
         font-size: 5rem;
     }
-    h2{
+    h2 {
         font-size: 2.6rem;
     }
 }
 
-
-/* Profile
-------------------*/
-
-
-/* Projects
+/* PROJECTS
 ------------------*/
 .project-container {
     padding: 20px;
@@ -178,58 +168,52 @@ a:hover {
     flex: 1 1 auto;
 }
 .project-item h3 {
-    margin-top: 0%;
+    margin-top: 0;
 }
 .project-item img {
-    /* max-width: 100%; */
-   /* width: 300px;
-   margin-right: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-@media screen and (min-width:860px) {
+@media screen and (min-width: 860px) {
     .project-container {
         display: flex;
+        gap: 20px;
     }
     .project-item img {
         width: 300px;
-        margin-right: 20px;
-     }
+    }
 }
 
-@media screen and (max-width:859px) {
-    /* .project-container {
-        display: block;
-    } */
+@media screen and (max-width: 859px) {
     .project-item img {
         max-width: 100%;
-        margin:auto;
+        margin: auto;
         display: block;
-        
-     }
+    }
 }
 
-/* Work exp
+/* WORK EXPERIENCE
 ------------------*/
 .work-item {
-     margin: 30px 0;
+    margin: 30px 0;
 }
-
 .work-details p {
     margin: 0;
 }
 
-@media screen and (min-width:860px) {
+@media screen and (min-width: 860px) {
     .work-item {
         display: grid;
         grid-template-columns: 300px 1fr;
         column-gap: 20px;
-   }
-   .work-summary p:first-child { 
+    }
+    .work-summary p:first-child {
         margin: 0;
     }
 }
 
-/* Education
+/* EDUCATION
 ------------------*/
 .education-item {
     margin: 30px 0;
@@ -241,8 +225,8 @@ a:hover {
 /* FOOTER
 ------------------*/
 footer {
-    background: #222222;
-    color: #8ECAE6;
+    background: #1D2D44;
+    color: #F0EBD8;
 }
 .socials {
     list-style-type: none;
@@ -256,43 +240,49 @@ footer {
     width: 32px;
     height: 32px;
 }
-.socials img:hover{
-    opacity: 0.6;
+.socials img:hover {
+    opacity: 0.7;
 }
 
-@media screen and (min-width:860px) {
+@media screen and (min-width: 860px) {
     footer {
         display: flex;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 20px;
     }
 }
-@media screen and (max-width:859px) {
+@media screen and (max-width: 859px) {
     footer {
         text-align: center;
         padding: 10px;
     }
 }
 
-
 /* IDs
 ------------------*/
-
 #my_name {
-    color:#023047;
-    background:#FFB703;
+    color: #F0EBD8;
+    background: #1D2D44;
+    padding: 5px 10px;
+    border-radius: 6px;
 }
 
-
-.large-text{
-    font-size: 26px;
+.large-text {
+    font-size: 2.6rem;
 }
+
 .button {
-    background: #FFB703;
-    color: #023047;
-    border-radius: 10px;
-}
-
-.button.large-text{
+    background: #748CAB;
+    color: #0D1321;
+    border-radius: 8px;
+    padding: 8px 14px;
     font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background 0.3s ease;
+}
+.button:hover {
+    background: #3E5C76;
+    color: #F0EBD8;
 }
