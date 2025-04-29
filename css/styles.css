@@ -133,7 +133,7 @@ a:hover {
 /* RESUME
 ------------------*/
 .resume header::before {
-    background: url(../images/cosmos-rawpixel-scaled.jpg) center;
+    background: #0d1327 center;
     background-size: cover;
     content: "";
     display: block;
