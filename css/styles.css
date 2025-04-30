@@ -132,7 +132,11 @@ a:hover {
 
 /* RESUME
 ------------------*/
-.resume header::before {
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+#particles-js {
     background: #0d1327 center;
     background-size: cover;
     content: "";
