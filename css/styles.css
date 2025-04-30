@@ -86,11 +86,15 @@ a:hover {
     padding: 1rem 2rem;
     z-index: 100;
 }
+
 .nav-bar a {
     color: #F0EBD8;
     padding: 1.6rem 1.7rem;
     font-size: 2rem;
     text-decoration: none;
+}
+.nav-bar img {
+    justify-content: flex-start; 
 }
 .nav-bar a:hover {
     background-color: #3E5C76;
@@ -141,7 +145,7 @@ canvas {
     background-size: cover;
     content: "";
     display: block;
-    height: 375px;
+    height: 400px;
 }
 .resume-section {
     margin-bottom: 50px;
