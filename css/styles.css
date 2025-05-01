@@ -147,10 +147,37 @@ canvas {
     background-size: cover;
     content: "";
     display: block;
-    height: 400px;
+    height: 500px;
+    position: relative;
+    z-index: 0;
 }
+#particles-js::after {
+    content: "";
+    position: absolute;
+    bottom: 0;           /* anchor to the bottom of the particles box */
+    left: 0;
+    width: 100%;
+    height: 50px;       /* how much to “mask” */
+    background-color: #F0EBD8;
+    pointer-events: none;/* so it never blocks clicks on the canvas */
+    z-index: 1;          /* above the particles, below anything with z-index ≥2 */
+  }
 .resume-section {
     margin-bottom: 50px;
+}
+
+header {
+    position: relative;
+    margin-top: -80px;  /* overlaps 100px */
+    z-index: 2;          /* sits above the particles */
+    pointer-events: none;
+}
+
+/* if you ever do want something _inside_ the header to still be clickable,
+   re‐enable pointer‐events on that element: */
+header .content-wrapper {
+  pointer-events: auto;
+  padding: 0;
 }
 .resume-section h2 {
     border-bottom: 2px dashed #3E5C76;
@@ -275,6 +302,8 @@ footer {
     background: #1D2D44;
     padding: 5px 10px;
     border-radius: 6px;
+    border: 3px solid #F0EBD8;
+    margin: 0;
 }
 
 .large-text {
