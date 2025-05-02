@@ -101,6 +101,8 @@ a:hover {
 .nav-bar a:hover {
     background-color: #3E5C76;
     color: #F0EBD8;
+    transition: background 0.35s ease;
+    border-radius: 4px;
 }
 
 /* HOME
