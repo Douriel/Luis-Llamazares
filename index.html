@@ -9,33 +9,188 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="javaScript/button_script.js"></script>
     
   </head>
-  <body class="home">
+  <body class="resume">
+    <a id="cv_button" class="btn download-link" href="files/Luis Llamazares Resume.pdf">Download CV as PDF</a>
     <!-- //  INTRO  // -->
-    <div class="content-wrapper">
-      <div class="content-bg">
-        <header>
-          <!-- Start content edits below this line. -->
-          <h1 id="my_name">Luis Llamazares</h1>
-          <h2 class="large-text">Software Engineer | Product Support Engineer at SAP</h2>
-          <button class="button large-text">Like</button>
-          <!-- End content edits here. -->
-        </header>
-
-        <!-- //  ABOUT ME  // -->
-        <main>
-          <!-- Start content edits below this line. -->
-          <p>About me - I am software Engineer graduated in UFV, I also got a master degree in software designed with 
-            artificial intelligence. I live in dublin since 3 years ago. And I work at SAP as Product Support Engineer 
-            and I am plannign to <a href="resume.html"> resume</a>. Thanks for stopping by!</p>
-
-          <!-- End content edits here. -->
-        </main>
-      </div>
+    <div class="nav-bar">
+      <img src="images/LLLogo.png" alt="Luis Logo" width="40" height="52">
+      <a class="active" href="#profile">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#work-experience">Career</a>
+      <a href="#education">Education</a>
     </div>
+    <div id="particles-js"></div>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script  src="javaScript/particles.js"></script>
+    <header>
+      <!-- Start content edits below this line. -->
+      
+      <div class="content-wrapper">
+        <h1 id="my_name">Luis Llamazares</h1>
+        <h2>Software Engineer | Support Engineer at SAP</h2>
+      </div>
+      <!-- End content edits here. -->
+    </header>
+
+    <main class="content-wrapper">
+      <!-- //  PROFILE  // -->
+      <section id="profile" class="resume-section">
+        <!-- Start content edits below this line. -->
+        <h2>Welcome</h2>
+        <p>I'm Luis Llamazares, originally from Cuenca, Spain, and currently based in Dublin, Ireland. I'm a Software Engineer specialized in Artificial Intelligence.
+On this website, you'll find a selection of projects I've worked on — showcasing my skills, interests, and what I’m passionate about building.</p>
+
+        <!-- End content edits here. -->
+      </section>
+
+      <!-- //  PROJECTS  // -->
+      <section id="projects" class="resume-section">
+        <!-- Start content edits below this line. -->
+        <h2>Projects</h2>
+        <p>Here’s a selection of projects I’ve worked on, combining AI, software engineering, and personal curiosity.</p>
+
+        <!-- To add more items, copy this whole <section></section> block-->
+        <section class="project-container">
+          <div class="project-item">
+            <img src="images/forestal fire 500px.jpeg" srcset="images/forestal fire x1000px.jpeg 2x" alt="Forest" width="" height="">
+          </div>
+          <div class="project-item">
+            <h3>Firewatch - Fire forest detector</h3>
+            <p>An AI-powered object detection model fine-tuned to identify smoke plumes in large areas such as forests. This system can help enable faster responses to prevent environmental disasters.</p>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/UFV-INGINF/proyecto-fin-grado-2021-Douriel" target="_blank">Code here</a>
+            <!-- additional links, e.g. newsletter -->
+          </div>
+        </section>
+        <section class="project-container">
+          <div class="project-item">
+            <img src="images/medical report 500px.png" srcset="images/medical report 1000px.png 2x" alt="description of image" width="" height="">
+          </div>
+          <div class="project-item">
+            <h3>Simply Medical reports</h3>
+            <p>A custom LLM-based solution that improves the readability of medical reports. It helps patients better understand their conditions and the recommended course of action.</p>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/Douriel/LED_Clock" target="_blank">Code here</a>
+            <!-- additional links, e.g. newsletter -->
+          </div>
+        </section><section class="project-container">
+          <div class="project-item">
+            <img src="images/smart clock 500px.png" srcset="images/smart clock 1000px.png 2x" alt="description of image" width="" height="">
+          </div>
+          <div class="project-item">
+            <h3>First smart clock</h3>
+            <p>My first smartwatch prototype, enhanced with sensors and actuators to make it interactive. It includes:</p>
+            <ul>
+              <li>Motion sensor that activates the display when you wave at it</li>
+              <li>Humidity sensor</li>
+              <li>Thermometer</li>
+              <li>Alarm feature</li>
+              <li>Calendar</li>
+            </ul>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/Douriel/LED_Clock" target="_blank">Code here</a>
+            <!-- additional links, e.g. newsletter -->
+         </div>
+        </section>
+        <section class="project-container">
+          <div class="project-item">
+            <img src="images/chip - 8 x500px.png" srcset="images/chip - 8 x1000px.png 2x" alt="description of image 2x" width="" height="">
+          </div>
+          <div class="project-item">
+            <h3>CHIP-8 emulator</h3>
+            <p>CHIP-8 is a virtual machine often recommended for those building their first emulator due to its simplicity. This was the first emulator I successfully completed, giving me valuable insights into how emulators work — without the complexity of replicating real hardware.</p>
+            <!-- link to project -->
+            <a class="btn" href="https://github.com/Douriel/CHIP-8" target="_blank">Code here</a>
+            <!-- additional links, e.g. newsletter -->
+          </div>
+        </section>
+        <!-- End content edits here. -->
+      </section>
+
+      <!-- //  WORK EXPERIENCE  // -->
+      <section id="work-experience" class="resume-section">
+        <!-- Start content edits below this line.  -->
+        <h2>Work Experience</h2>
+        <p>Here’s a summary of my professional experience, focusing on software development, technical support, and intelligent systems.</p>
+
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Product Support Engineer Specialist</h3>
+            <p><b>SAP</b></p>
+            <p>December of 2021 - Present</p>
+          </div>
+          <div class="work-summary">
+            <p>I provide technical assistance with issues in a products or services from SAP to users or customers, resolving technical issues and ensuring systems and software function properly. I diagnose problems, implement solutions and write knowledge articles ensuring customer satisfaction.</p>
+            <p>Key responsibilities and achievements:</p>
+            <ul>
+                <li><b>Troubleshooting and Problem Solving:</b> Identifying and resolving technical issues</li>
+                <li><b>Documentation and Knowledge Base:</b> Documenting technical procedures and solutions, and maintaining a knowledge base for future reference.</li>
+                <li><b>Proficient technologies, tools, procedures, programming languages</b>Proficient technologies, tools, procedures, programming languages such as Python, SQL, SAP HANA, ABAP, and cloud-based platforms.</li>
+                <li><b>User Support:</b> Providing assistance to users on the use of software</li>
+                <li><b>Communication:</b> Communicating with users and internal teams to provide updates and troubleshoot issues.</li>
+                <li><b>Performance Analysis:</b> Monitoring services performance, identifying bottlenecks, and implementing solutions to improve performance.</li>
+
+            </ul>
+        </div>
+        </section>
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Full-Stack developer</h3>
+            <p><b>Add4you</b></p>
+            <p>March 2021 - September 2021</p>
+          </div>
+          <div class="work-summary">
+            <p>Designed and developed full-stack web applications, focusing on performance optimization and user experience.</p>
+            <p>Key achievements and responsibilities:</p>
+            <ul>
+                <li>Built and maintained web applications using Spring Boot, Maven, and Bootstrap.</li>
+                <li>Implemented responsive UI components, improving accessibility across devices.</li>
+                <li>Led the migration from a monolithic architecture to microservices, enhancing scalability</li>
+                <li>Ensured high code quality and maintainability through automated testing and CI/CD pipelines.</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <!-- End content edits here. -->
+      </section>
+
+      <!-- //  EDUCATION & CERTIFICATIONS  // -->
+      <section id="education" class="resume-section">
+        <!-- Start content edits below this line.  -->
+        <h2>Education</h2>
+
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="education-item">
+          <h3>Technological University of Shannon - Athlone</h3>
+          <h4>Software Design with Artificial Intelligence – MSc – First
+            Honour Class, 2023-2024</h4>
+          <p>This course provides a broad introduction to machine learning and statistical pattern recognition.</p>
+          <p>I learn about both supervised and unsupervised learning as well as learning theory, reinforcement learning and control.</p> 
+          <p>The study of data through Data Mining and Machine Learning techniques and a proper representation of it has been a paramount part of our education.
+            I have also improved my programming skills with subjects such as Object-oriented programming, scripting, or data structures.</p>
+        </section>
+
+        <!-- To add more items, copy this whole <section></section> block -->
+        <section class="education-item">
+          <h3>Francisco de Vitoria University - Madrid</h3>
+          <h4>Software Engineering, 2019-2023</h4>
+          <p>The Francisco de Vitoria University (UFV) offers a Computer Engineering program that combines knowledge of mathematics, logic, and technology to develop innovative solutions in the field of computing. During the course, I acquired fundamental skills in programming, databases, operating systems, networks, and software development. Additionally, innovation and entrepreneurship are encouraged, allowing me to develop my own projects and turn my ideas into reality.</p> 
+
+          <p>curriculum also includes areas such as artificial intelligence, cybersecurity, web development, and mobile applications, and professional projects that enable students to apply their knowledge in real-world situations.</p>
+        </section>
+
+
+        <!-- End content edits here. -->
+      </section>
+    </main>
+
     <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
+    <footer id="my_footer">
       <!-- Start content edits below this line. -->
       <p>© 2024 by Luis Llamazares | <a href="mailto:lugonllamazares@gmail.com">lugonllamazares@gmail.com</a></p>
 
