@@ -164,7 +164,7 @@ canvas {
     pointer-events: auto;/* so it never blocks clicks on the canvas */
     z-index: 1;          /* above the particles, below anything with z-index ≥2 */
   }
-.resume-section {
+.index-section {
     margin-bottom: 50px;
 }
 
@@ -181,13 +181,13 @@ header .content-wrapper {
   pointer-events: auto;
   padding: 0;
 }
-.resume-section h2 {
+.index-section h2 {
     border-bottom: 2px dashed #3E5C76;
     padding-bottom: 5px;
 }
 
 @media screen and (max-width: 700px) {
-    .resume header::before {
+    .index header::before {
         height: 200px;
     }
     h1 {
