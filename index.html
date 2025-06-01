@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="javaScript/button_script.js"></script>
-    
+    <script defer src="javaScript/show_elements_effect.js"></script>
   </head>
   <body class="resume">
     <a id="cv_button" class="btn download-link" href="files/Luis Llamazares Resume.pdf">Download CV as PDF</a>
@@ -25,6 +25,7 @@
     <div id="particles-js"></div>
     <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <script  src="javaScript/particles.js"></script>
+
     <header>
       <!-- Start content edits below this line. -->
       
@@ -40,9 +41,9 @@
       <section id="profile" class="resume-section">
         <!-- Start content edits below this line. -->
         <h2>Welcome</h2>
-        <p>I'm Luis Llamazares, originally from Cuenca, Spain, and currently based in Dublin, Ireland. I'm a Software Engineer specialized in Artificial Intelligence.
-On this website, you'll find a selection of projects I've worked on — showcasing my skills, interests, and what I’m passionate about building.</p>
-
+        <p id = "introduction"></p>
+        <script  src="javaScript/Typing_effect.js"></script>
+        <img class="hidden" src="images/testing.jpg" alt="Luis" width="400" height="300">
         <!-- End content edits here. -->
       </section>
 
@@ -55,7 +56,7 @@ On this website, you'll find a selection of projects I've worked on — showcasi
         <!-- To add more items, copy this whole <section></section> block-->
         <section class="project-container">
           <div class="project-item">
-            <img src="images/forestal fire 500px.jpeg" srcset="images/forestal fire x1000px.jpeg 2x" alt="Forest" width="" height="">
+            <img class="hidden" src="images/forestal fire 500px.jpeg" srcset="images/forestal fire x1000px.jpeg 2x" alt="Forest" width="" height="">
           </div>
           <div class="project-item">
             <h3>Firewatch - Fire forest detector</h3>
@@ -67,7 +68,7 @@ On this website, you'll find a selection of projects I've worked on — showcasi
         </section>
         <section class="project-container">
           <div class="project-item">
-            <img src="images/medical report 500px.png" srcset="images/medical report 1000px.png 2x" alt="description of image" width="" height="">
+            <img class="hidden" src="images/medical report 500px.png" srcset="images/medical report 1000px.png 2x" alt="medic report paper" width="" height="">
           </div>
           <div class="project-item">
             <h3>Simply Medical reports</h3>
@@ -78,7 +79,7 @@ On this website, you'll find a selection of projects I've worked on — showcasi
           </div>
         </section><section class="project-container">
           <div class="project-item">
-            <img src="images/smart clock 500px.png" srcset="images/smart clock 1000px.png 2x" alt="description of image" width="" height="">
+            <img class="hidden" src="images/smart clock 500px.png" srcset="images/smart clock 1000px.png 2x" alt="Led panel that is a clock" width="" height="">
           </div>
           <div class="project-item">
             <h3>First smart clock</h3>
@@ -97,7 +98,7 @@ On this website, you'll find a selection of projects I've worked on — showcasi
         </section>
         <section class="project-container">
           <div class="project-item">
-            <img src="images/chip - 8 x500px.png" srcset="images/chip - 8 x1000px.png 2x" alt="description of image 2x" width="" height="">
+            <img class="hidden" src="images/chip - 8 x500px.png" srcset="images/chip - 8 x1000px.png 2x" alt="Arcade game" width="" height="">
           </div>
           <div class="project-item">
             <h3>CHIP-8 emulator</h3>
