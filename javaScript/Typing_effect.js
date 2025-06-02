@@ -1,7 +1,7 @@
 const introduction = document.getElementById('introduction');
 
 var i = 0;
-var txt = "I'm Luis Llamazares, originally from Cuenca, Spain, and currently based in Dublin, Ireland. I'm a Software Engineer specialized in Artificial Intelligence.<On this website, you'll find a selection of projects I've worked on — showcasing my skills, interests, and what I’m passionate about building.";
+var txt = "Hello! I'm Luis, born in Cuenca, Spain, and currently based in Dublin, Ireland. I'm a Software Engineer specialized in Artificial Intelligence.<On this website, you'll find a selection of projects I've worked on — showcasing my skills, interests, and what I’m passionate about building.";
 var speed = 15;
 
 console.log(introduction.textContent)
