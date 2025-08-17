@@ -10,23 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="javaScript/button_script.js"></script>
+    <script src="javaScript/nav-bar_responsive.js"></script>
     
   </head>
   <body class="resume">
     <a id="cv_button" class="btn download-link" href="files/Luis Llamazares Resume.pdf">Download CV as PDF</a>
-    <!-- //  INTRO  // -->
-    <div class="nav-bar">
-      <img src="images/LLLogo.png" alt="Luis Logo" width="40" height="52">
-      <a class="active" href="#profile">About me</a>
-      <a href="#projects">Projects</a>
-      <a href="#work-experience">Career</a>
-      <a href="#education">Education</a>
+    <!-- //  Nav bar  // -->
+    <div id="my_nav-bar" class="nav-bar">
+      <div class="logo">
+        <img src="images/LLLogo.png" alt="Luis Logo" width="40" height="52">  
+        <a href="javascript:void(0);" style="font-size:15px;" id="bugger_button" class="burger" onclick="openMenu()"> 
+          <img src="images/burger.png" width="30" height="30" alt="Menu">
+          </a>
+      </div>
+      <div class="nav-links">
+        <a class="active" href="#profile">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#work-experience">Career</a>
+        <a href="#education">Education</a>
+      </div>
+
     </div>
+
+    
+    <!--Particles effect is called below-->
     <div id="particles-js"></div>
     <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <script  src="javaScript/particles.js"></script>
+
     <header>
-      <!-- Start content edits below this line. -->
+      <!-- My name and role. -->
       
       <div class="content-wrapper">
         <h1 id="my_name">Luis Llamazares</h1>

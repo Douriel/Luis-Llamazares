@@ -77,16 +77,33 @@ a:hover {
     padding: 20px;
 }
 
+/* NAV-BAR
+----------*/
+
 .nav-bar {
     display: flex;
-    align-items: center;    /* vertically center your items */
-    /* remove justify-content: flex-end; */
+    justify-content: space-between; /* Logo left, links right */
+    align-items: center;
     padding: 1rem 2rem;
     background-color: #0D1321;
     position: fixed;
     width: 100%;
     z-index: 100;
-  }
+}
+
+.nav-bar .burger {
+  position: absolute;
+  right: 2rem;   /* pegado al borde derecho */
+  top: 9px;      
+  margin-right: 0;
+  display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem; /* espacio entre links */
+}
+
 
 .nav-bar a {
     color: #F0EBD8;
@@ -95,14 +112,54 @@ a:hover {
     text-decoration: none;
 }
 .nav-bar img {
-    margin-right: auto;
-    /* you can still control its size here if you like */
+    margin-right: 1rem;
   }
+
 .nav-bar a:hover {
     background-color: #3E5C76;
     color: #F0EBD8;
     transition: background 0.35s ease;
     border-radius: 4px;
+}
+
+.nav-bar .burger {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav-bar .nav-links{
+    display: none;
+    padding-bottom: 0.4rem;
+  }
+  .nav-bar .burger {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar.responsive {
+        display: block;
+    }
+
+    .nav-bar.responsive .nav-links {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .nav-bar.responsive .nav-links a {
+        display: block;       /* cada link ocupa toda la línea */
+        width: 100%;          /* se estira al 100% del contenedor */
+        padding: 1.6rem 2rem; /* padding uniforme */
+        box-sizing: border-box;
+    }
+
+    .nav-bar .burger {
+    display: block;
+    }
+
 }
 
 /* HOME
