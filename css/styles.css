@@ -127,7 +127,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .nav-bar .nav-links{
     display: none;
     padding-bottom: 0.4rem;
@@ -138,7 +138,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .nav-bar.responsive {
         display: block;
     }
