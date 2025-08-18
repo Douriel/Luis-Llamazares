@@ -7,11 +7,10 @@ Cabeza flotante mia como dijo Pach.
 Añadir sección de hobbies.
 
 
+Añadir profundidad a las imagenes
 
-Añadir profundidad a la foto del inicio.
 
-
-La nav bar no se detiene donde debe, justo encima del titulo.
+La nav bar no se detiene donde debe, justo encima del titulo de la seccion.
 
 
 
@@ -21,6 +20,7 @@ Cosas hechas:
 -verlo desde el movil es un desastre.
 -arreglar el boton de descargar curriculum, no deja ver la social media
 -Navigation bar.
+-Nav-bar es ahora responsive y se puede ver bien desde dispositivos moviles.
 
 
 
