@@ -243,6 +243,11 @@ header .content-wrapper {
     padding-bottom: 5px;
 }
 
+#my_name::first-letter {
+    color: #CC3333;
+    padding-left: 1%;
+}
+
 @media screen and (max-width: 700px) {
     .index header::before {
         height: 200px;
